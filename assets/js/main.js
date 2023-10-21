@@ -95,21 +95,3 @@ yesOption.addEventListener("click", function () {
   optionAnswer.innerHTML = getAnswer(true);
 });
 // end ternary operator about us
-
-const currentPageURL = window.location.href;
-function setActiveLink(linkId) {
-  const link = document.getElementById(linkId);
-  if (link) {
-    link.classList.add("active");
-  }
-}
-
-if (currentPageURL.includes("/index.html")) {
-  setActiveLink("homeLink");
-} else if (currentPageURL.includes("/portofolio/portofolio.html")) {
-  setActiveLink("portfolioLink");
-} else if (currentPageURL.includes("/about/about.html")) {
-  setActiveLink("aboutLink");
-} else if (currentPageURL.includes("/contact/contact.html")) {
-  setActiveLink("contactLink");
-}
