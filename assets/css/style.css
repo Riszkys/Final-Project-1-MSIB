@@ -7,21 +7,24 @@ body{
 .ini-footer{
     background-color: #9A3B3B;
 }
-.navbar-top {
-    height: 50px;
-    background-color: #FF8551;
-}
-.navbar-top .container .row .text {
-    padding-top: 10px;
-    color: white;
-    font-size: 18px;
-}
-.navbar .todo_list:hover{
-    cursor: pointer;
-
+#navbar-container {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: #FF8551;
+  z-index: 100;
 }
 
+#navbar-container .container .row .text {
+  padding-top: 10px;
+  position: sticky;
+  color: white;
+  font-size: 18px;
+}
 
+#navbar-container .todo_list:hover {
+  cursor: pointer;
+}
 
 
 /* todo list */
