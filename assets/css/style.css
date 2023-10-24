@@ -339,6 +339,13 @@ body{
 /*about us end*/
 
 
+@media (max-width: 767px) {
+
+  .navbar-top .col-md-5,
+  .navbar-top .col.text-end {
+    display: none;
+  }
+}
 
       
 /*about us*/
