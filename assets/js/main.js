@@ -1,8 +1,10 @@
-const inputbox = document.getElementById("input-box");
-const listcontainer = document.getElementById("list-container");
+const inputbox = document.getElementById("input-box"); //object js
+const listcontainer = document.getElementById("list-container"); //object js
 
 function addTask() {
+  //function atau method
   if (inputbox.value === "") {
+    //simbol ===
     alert("Masukkan Pesan Anda !!");
   } else {
     const li = document.createElement("li");
@@ -61,8 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
     filterWorks("profil");
   });
 
+  // filter function
   function filterWorks(category) {
     workList.forEach(function (work) {
+      //foreach
       if (category === "all" || work.id === category) {
         work.style.display = "block";
       } else {
@@ -72,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// start ternary operator about us
 const noOption = document.getElementById("noOption");
 const yesOption = document.getElementById("yesOption");
 const optionAnswer = document.getElementById("optionAnswer");
@@ -83,6 +86,7 @@ function clickOption() {
   yesOption.style.visibility = "hidden";
 }
 
+// ternary operaror
 function getAnswer(theAnswer) {
   return theAnswer
     ? "Mantap, hubungi kami untuk informasi lebih lanjut."
@@ -94,4 +98,3 @@ noOption.addEventListener("click", function () {
 yesOption.addEventListener("click", function () {
   optionAnswer.innerHTML = getAnswer(true);
 });
-// end ternary operator about us
