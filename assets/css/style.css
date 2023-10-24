@@ -22,6 +22,7 @@ body{
   font-size: 18px;
 }
 
+/* nav */
 #navbar-container .todo_list:hover {
   cursor: pointer;
 }
