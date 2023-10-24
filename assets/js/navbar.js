@@ -30,7 +30,6 @@ const navbar = `
     <div></div>
   </div>
   </div>
-  </div>
   <section>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -89,10 +88,10 @@ const navbar = `
       </div>
     </nav>
   </section>
+</div>
 `;
 
 document.getElementById("navbar-container").innerHTML = navbar;
-
 const inputbox = document.getElementById("input-box"); //object js
 const listcontainer = document.getElementById("list-container"); //object js
 
