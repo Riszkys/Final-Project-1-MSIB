@@ -7,7 +7,7 @@ body{
 .ini-footer{
     background-color: #9A3B3B;
 }
-.navbar-top {
+#navbar-container {
   position: sticky;
   top: 0;
   height: 50px;
@@ -15,13 +15,14 @@ body{
   z-index: 100;
 }
 
-.navbar-top .container .row .text {
+#navbar-container .container .row .text {
   padding-top: 10px;
+  position: sticky;
   color: white;
   font-size: 18px;
 }
 
-
+/* nav */
 #navbar-container .todo_list:hover {
   cursor: pointer;
 }
